@@ -1,0 +1,29 @@
+# MySQL. Versions 5.5.8 and up are supported.
+#
+# Install the MySQL driver
+#   gem install mysql2
+#
+# Ensure the MySQL gem is defined in your Gemfile
+#   gem 'mysql2'
+#
+# And be sure to use new-style password hashing:
+#   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
+#
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: rafayetmonon
+  password: root
+
+development:
+  <<: *default
+  database: teach_in_development
+
+test:
+  <<: *default
+  database: teach_in_test
+
+production:
+  <<: *default
+  database: teach_in_production
