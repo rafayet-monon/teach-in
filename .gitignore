@@ -32,3 +32,4 @@ coverage
 !/.bundle/config
 .browserslistrc
 .k
+test/
