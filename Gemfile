@@ -65,3 +65,6 @@ gem 'friendly_id', '~> 5.2.4'
 gem 'activeadmin', '2.2.0'
 gem 'arctic_admin', '3.0.0'
 gem 'carrierwave', '~> 2.0'
+gem 'activeadmin-searchable_select'
+gem 'activeadmin_addons'
+

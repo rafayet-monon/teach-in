@@ -7,9 +7,14 @@ class User < ActiveRecord::Base
          :confirmable
   include DeviseTokenAuth::Concerns::User
 
-  belongs_to :school
-  belongs_to :college
-  belongs_to :university
+  belongs_to :school, optional: true
+  belongs_to :college, optional: true
+  belongs_to :university, optional: true
+  has_many :tutionships
+  has_many :subjects, through: :tutionships
+  accepts_nested_attributes_for :tutionships, allow_destroy: true
+
+  validates_presence_of :full_name
 
   mount_uploader :image, AvatarUploader
 

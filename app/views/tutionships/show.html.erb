@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @tutionship.user_id %>
+</p>
+
+<p>
+  <strong>Tution class:</strong>
+  <%= @tutionship.tution_class_id %>
+</p>
+
+<%= link_to 'Edit', edit_tutionship_path(@tutionship) %> |
+<%= link_to 'Back', tutionships_path %>
