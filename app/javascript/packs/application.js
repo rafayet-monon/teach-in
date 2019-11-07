@@ -11,6 +11,7 @@ require('jquery')
 
 import '../plugins/popper'
 import '../plugins/bootstrap.min'
+import '../plugins/ScrollMagic.min'
 import '../plugins/TweenMax.min'
 import '../plugins/easing'
 import '../plugins/parallax.min'
