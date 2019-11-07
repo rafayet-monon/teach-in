@@ -30,17 +30,17 @@ $(document).ready(function()
 	var burger = $('.hamburger');
 	// var ctrl = new ScrollMagic.Controller();
 
-	setHeader();
-
-	$(window).on('resize', function()
-	{
-		setHeader();
-	});
-
-	$(document).on('scroll', function()
-	{
-		setHeader();
-	});
+	// setHeader();
+	//
+	// $(window).on('resize', function()
+	// {
+	// 	setHeader();
+	// });
+	//
+	// $(document).on('scroll', function()
+	// {
+	// 	setHeader();
+	// });
 
 	initMenu();
 	// initHeaderSearch();
@@ -53,17 +53,17 @@ $(document).ready(function()
 
 	*/
 
-	function setHeader()
-	{
-		if($(window).scrollTop() > 100)
-		{
-			header.addClass('scrolled');
-		}
-		else
-		{
-			header.removeClass('scrolled');
-		}
-	}
+	// function setHeader()
+	// {
+	// 	if($(window).scrollTop() > 100)
+	// 	{
+	// 		header.addClass('scrolled');
+	// 	}
+	// 	else
+	// 	{
+	// 		header.removeClass('scrolled');
+	// 	}
+	// }
 
 	/* 
 
