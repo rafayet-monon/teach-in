@@ -4,12 +4,23 @@
     <title>Tuition Center</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%#= favicon_link_tag 'bundletour-favicon' %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
+  <div class="super_container">
+    <%= render 'shared/header' %>
+    <%= render 'shared/loader' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
+  </div>
+
   </body>
 </html>
